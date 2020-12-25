@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "patch-package",
+    "dev": "vuepress dev blog",
+    "devnc": "vuepress dev blog --no-cache",
+    "build": "vuepress build blog",
+    "deploy": "bash ./blog_deploy.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdown-it-disable-url-encode": "^1.0.1",
+    "patch-package": "^6.2.2",
+    "vuepress": "1.7.1",
+    "vuepress-plugin-auto-sidebar": "^1.5.0",
+    "vuepress-theme-reco": "^1.5.7"
+  },
+  "dependencies": {
+    "vue-router": "3.4.9"
+  }
+}

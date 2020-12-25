@@ -1,0 +1,44 @@
+diff --git a/node_modules/vuepress-plugin-auto-sidebar/index.js b/node_modules/vuepress-plugin-auto-sidebar/index.js
+index 5b4713e..f98a7f9 100644
+--- a/node_modules/vuepress-plugin-auto-sidebar/index.js
++++ b/node_modules/vuepress-plugin-auto-sidebar/index.js
+@@ -15,7 +15,17 @@ module.exports = (options, ctx) => ({
+       const { pages } = ctx;
+ 
+       // 整理 pages 数据
+-      const mapPages = pages.filter(page => page.relativePath).map(page => ({
++      const mapPages = pages.filter(page => page.relativePath).filter(page => {
++        const excludePath = mergeOptions.excludePath || [];
++        let res = true;
++        excludePath.forEach((matchPath)=>{
++         if (!page.relativePath.split(matchPath)[0]) {
++          res =  Boolean(page.relativePath.split(matchPath)[0])
++         }
++          return;
++        })
++        return res;
++      }).map(page => ({
+         frontmatter: page.frontmatter,
+         menuPath: getMenuPath(page.relativePath),
+         filename: getFilename(page.relativePath)
+@@ -64,7 +74,7 @@ module.exports = (options, ctx) => ({
+   async enhanceAppFiles() {
+     return {
+       name: "auto-sidebar-enhance",
+-      content: `export default ({ siteData, options }) => { siteData.themeConfig.sidebar = ${JSON.stringify(SIDEBAR)} }`
++      content: `export default ({ siteData, options }) => { siteData.themeConfig.sidebar = Object.assign({},${JSON.stringify(SIDEBAR)},siteData.themeConfig.sidebar)}`
+     }
+   }
+ });
+\ No newline at end of file
+diff --git a/node_modules/vuepress-plugin-auto-sidebar/lib/options.js b/node_modules/vuepress-plugin-auto-sidebar/lib/options.js
+index a4b37a7..4b0b670 100644
+--- a/node_modules/vuepress-plugin-auto-sidebar/lib/options.js
++++ b/node_modules/vuepress-plugin-auto-sidebar/lib/options.js
+@@ -7,4 +7,5 @@ module.exports = {
+   collapsable: false, // 折叠
+   collapseList: [], // 折叠列表
+   uncollapseList: [], // 不折叠列表
++  excludePath: [], //排除路径
+ }
+\ No newline at end of file

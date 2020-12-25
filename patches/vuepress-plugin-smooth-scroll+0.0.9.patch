@@ -1,0 +1,22 @@
+diff --git a/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js b/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js
+index 243827f..d5595dc 100644
+--- a/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js
++++ b/node_modules/vuepress-plugin-smooth-scroll/lib/enhanceApp.js
+@@ -9,6 +9,7 @@ function getElementPosition(el) {
+         y: elRect.top - docRect.top,
+     };
+ }
++
+ const enhanceApp = ({ Vue, router }) => {
+     router.options.scrollBehavior = (to, from, savedPosition) => {
+         if (savedPosition) {
+@@ -21,7 +22,8 @@ const enhanceApp = ({ Vue, router }) => {
+             if (Vue.$vuepress.$get('disableScrollBehavior')) {
+                 return;
+             }
+-            const targetElement = document.querySelector(to.hash);
++            //增加改变
++            const targetElement = document.querySelector(decodeURI(to.hash));
+             if (targetElement) {
+                 return window.scrollTo({
+                     top: getElementPosition(targetElement).y,

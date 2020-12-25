@@ -1,0 +1,12 @@
+diff --git a/node_modules/@vuepress/core/lib/client/index.ssr.html b/node_modules/@vuepress/core/lib/client/index.ssr.html
+index 5888234..aba6e57 100644
+--- a/node_modules/@vuepress/core/lib/client/index.ssr.html
++++ b/node_modules/@vuepress/core/lib/client/index.ssr.html
+@@ -5,6 +5,7 @@
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <title>{{ title }}</title>
+     <meta name="generator" content="VuePress {{ version }}">
++    <script src="https://cdn.jsdelivr.net/combine/npm/vue@2.6.12/dist/vue.runtime.min.js,npm/vue-router@3.4.9/dist/vue-router.min.js"></script>
+     {{{ userHeadTags }}}
+     {{{ pageMeta }}}
+     {{{ canonicalLink }}}

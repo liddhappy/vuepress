@@ -1,0 +1,6 @@
+# start of file
+user-agent: *
+disallow: /images/
+
+user-agent: magicsearchbot
+disallow: /assets/
