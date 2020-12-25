@@ -50,11 +50,11 @@ tomcat 端口号默认 8080 （此端口号较为常见，容易冲突），建�
 
 1.找到 Tomcat 配置文件
 
-![alt](.\picture\修改Tomcat端口1.png)
+![alt](./picture/修改Tomcat端口1.png)
 
 2.修改 Tomcat 配置文件
 
-![alt](.\picture\修改Tomcat端口2.png)
+![alt](./picture/修改Tomcat端口2.png)
 
 3.访问 tomcat
 
@@ -62,13 +62,13 @@ tomcat 端口号默认 8080 （此端口号较为常见，容易冲突），建�
 
 1. 双击 bin/startup.bat 启动 Tomcat
 
-![alt](.\picture\Tomcat启动方式1.png)
+![alt](./picture/Tomcat启动方式1.png)
 
 2. windows 管理提示符
 
 window 键+R 输入 cmd
 
-![alt](.\picture\Tomcat启动方式2.png)
+![alt](./picture/Tomcat启动方式2.png)
 
 ```
 http://localhost:8888/

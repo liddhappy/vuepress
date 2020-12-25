@@ -112,7 +112,7 @@ ps 命令的参数以及作用
 
 top 命令用于动态地监视进程活动与系统负载等信息，其格式为 top。
 
-![alt](..\picture\top命令.jpg)
+![alt](../picture/top命令.jpg)
 
 第 1 行：系统时间、运行时间、登录终端数、系统负载（三个数值分别为 1 分钟、5 分钟、15 分钟内的平均值，数值越小意味着负载越低）。
 
@@ -1097,9 +1097,9 @@ Linux/Unix 的文件调用权限分为三级 : 文件所有者（Owner）、用�
 
 只有文件所有者和超级用户可以修改文件或目录的权限。可以使用绝对模式（八进制数字模式），符号模式指定文件的权限。
 
-![img](.\picture\file-permissions-rwx.jpg)
+![img](./picture/file-permissions-rwx.jpg)
 
-![img](.\picture\rwx-standard-unix-permission-bits.png)
+![img](./picture/rwx-standard-unix-permission-bits.png)
 
 常用粘贴命令
 

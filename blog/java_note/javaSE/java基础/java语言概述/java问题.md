@@ -75,7 +75,7 @@ JDK 包含 JRE，JRE 包含 JVM.
 
 ## 输出：心形
 
-![alt](.\picture\心形.png)
+![alt](./picture/心形.png)
 
 方式一：
 

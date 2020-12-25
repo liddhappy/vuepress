@@ -91,7 +91,7 @@ cookie.setMaxAge(1000);
 
 ### b)如何创建 **Cookie**
 
-![img](.\picture\Cookie创建.png)
+![img](./picture/Cookie创建.png)
 
 Servlet 程序中的代码：
 
@@ -112,7 +112,7 @@ resp.getWriter().write("Cookie 创建成功"); }
 
 服务器获取客户端的 Cookie 只需要一行代码：req.getCookies():Cookie[]
 
-![img](.\picture\server获取Cookie.png)
+![img](./picture/server获取Cookie.png)
 
 Cookie 的工具类：
 
@@ -194,11 +194,11 @@ resp.addCookie(cookie); }
 
 谷歌浏览器如何查看 **Cookie**：
 
-![img](.\picture\chrome查看Cookie.png)
+![img](./picture/chrome查看Cookie.png)
 
 火狐浏览器如何查看 **Cookie**：
 
-![img](.\picture\firefox查看Cookie.png)
+![img](./picture/firefox查看Cookie.png)
 
 ### f) Cookie 生命控制
 
@@ -282,7 +282,7 @@ resp.getWriter().write("创建了一个带有 Path 路径的 Cookie"); }
 
 ### h) **Cookie** 练习**---**免输入用户名登录
 
-![img](.\picture\免密输入.png)
+![img](./picture/免密输入.png)
 
 login.jsp 页面
 
@@ -625,7 +625,7 @@ Session 默认的超时时长是多少?
 
 Session 超时的概念介绍：
 
-![img](.\picture\Session超时.png)
+![img](./picture/Session超时.png)
 
 示例代码：
 
@@ -654,4 +654,4 @@ resp.getWriter().write("Session 已经设置为超时（无效）"); }
 
 Session 技术，底层其实是基于 Cookie 技术来实现的。
 
-![img](.\picture\浏览器和Session之间关系.png)
+![img](./picture/浏览器和Session之间关系.png)

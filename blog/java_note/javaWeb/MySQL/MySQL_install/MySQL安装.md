@@ -13,25 +13,25 @@ MySQL 关是一种关系数据库管理系统，所使用的 SQL 语言是用于
 
 1.  进入官网后，点击"Dowload"，然后页面往下拉
 
-**![img](.\picture\mysql1.jpg)**
+**![img](./picture/mysql1.jpg)**
 
 2. 接下来看到的页面是这样的，红色框框的链接就是 mysql 社区版，是免费的 mysql 版本，然后我们点击这个框框的链接
 
-![img](.\picture\mysql2.jpg)
+![img](./picture/mysql2.jpg)
 
 3. 接下来跳转到这个页面，在这里，我们只要下载社区版的 Server 就可以了
 
-![img](.\picture\mysql3.jpg)
+![img](./picture/mysql3.jpg)
 
 4. 下载免安装版(windows 以外的其他系统除外)
 
-![img](.\picture\mysql4.jpg)
+![img](./picture/mysql4.jpg)
 
 **这样，安装包就下载好了！**
 
 **注意，安装的目录应当放在指定位置，，其次，绝对路径中避免出现中文，推荐首选英文为命名条件！！！！(我的为参考)**
 
-**![](.\picture\mysql5.jpg)**
+**![](./picture/mysql5.jpg)**
 
 ## 　
 
@@ -61,7 +61,7 @@ mysqld --install
 mysqld --initialize --console
 ```
 
-![img](.\picture\mysql9.jpg)
+![img](./picture/mysql9.jpg)
 
 ### 　　 4 开启 mysql 的服务
 
@@ -71,7 +71,7 @@ mysqld --initialize --console
 net start mysql
 ```
 
-![img](.\picture\mysql10.jpg)
+![img](./picture/mysql10.jpg)
 
 ### 5.登录验证，mysql 是否安装成功！
 
@@ -83,7 +83,7 @@ net start mysql
 mysql -u root -p
 ```
 
-![img](.\picture\mysql11.jpg)
+![img](./picture/mysql11.jpg)
 
 ### 　　修改密码：
 
@@ -93,7 +93,7 @@ mysql -u root -p
 alter user '用户'@'localhost' identified by 'root';
 ```
 
-![img](.\picture\mysql12.jpg)
+![img](./picture/mysql12.jpg)
 
 再次登录验证新密码：
 
@@ -103,7 +103,7 @@ alter user '用户'@'localhost' identified by 'root';
 mysql -u root -p
 ```
 
-![img](.\picture\mysql13.jpg)
+![img](./picture/mysql13.jpg)
 
 ## 　　**三:设置系统的全局变量：**
 
@@ -123,6 +123,6 @@ mysql -u root -p
 
 3. 在 mysql 目录下创建一个 ini 或 cnf 配置文件，在这里我创建的是 ini 配置文件，里面写的代码是 mysql 的一些基本配置
 
-![img](.\picture\mysql16.jpg)
+![img](./picture/mysql16.jpg)
 
 就这样，一个免安装版的 Mysql 就安装并配置完成了

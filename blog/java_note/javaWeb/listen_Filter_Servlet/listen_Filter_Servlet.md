@@ -6,10 +6,11 @@ categories:
 tags:
   - Web
 ---
+
 ```java
 package com.xy.web.listener;
         import javax.servlet.ServletRequestAttributeEvent;
-        
+
         import javax.servlet.ServletRequestAttributeListener;
 
         import javax.servlet.ServletRequestEvent;
@@ -83,6 +84,7 @@ public class TestListener implements HttpSessionListener, ServletRequestListener
 
 }
 ```
+
 Listener,Filter 和 servlet 都是配置在 web.xml 文件中。
 
 ## Listener、Filter、Servlet 定义：
@@ -217,7 +219,7 @@ public class TestFilter implements Filter {
 	}
 
 	public void init(FilterConfig arg0) throws ServletException {
-        
+
 		logger.info("..............execute TestFilter  init()..............");
 	}
 }
@@ -284,13 +286,13 @@ public class TestServlet extends HttpServlet {
 		logger.info("...TestServlet doPost() start..........");
 
 		//操作attribute
-        
+
 		request.setAttribute("a", "a");
 
 		request.setAttribute("a", "b");
 
 		request.getAttribute("a");
-        
+
 		request.removeAttribute("a");
 
 		//操作session
@@ -298,7 +300,7 @@ public class TestServlet extends HttpServlet {
 		request.getSession().setAttribute("a", "a");
 
 		request.getSession().getAttribute("a");
-        
+
 		request.getSession().invalidate();
 
 		logger.info("...TestServlet doPost() end..........");
@@ -411,7 +413,7 @@ public class TestServlet extends HttpServlet {
 2016-01-14 00:03:27,746 INFO TestListener:30 - ......TestListener requestDestroyed()......
 ```
 
-![img](.\picture\日志1.png)
+![img](./picture/日志1.png)
 
 第二次访问：
 
@@ -428,7 +430,7 @@ public class TestServlet extends HttpServlet {
 2016-01-14 00:04:19,044 INFO TestListener:30 - ......TestListener requestDestroyed()......
 ```
 
-![img](.\picture\日志2.png)
+![img](./picture/日志2.png)
 
 关闭项目，打印日志如下：
 
@@ -445,8 +447,6 @@ public class TestServlet extends HttpServlet {
 .......
 **2016-01-14 00:40:22,091 INFO TestFilter:19 - ..............execute TestFilter destroy()..............**
 ```
-
-
 
 ---
 

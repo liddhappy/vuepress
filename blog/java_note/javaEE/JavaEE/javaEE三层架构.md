@@ -24,7 +24,7 @@ tags:
 - V：View，视图，代表展示给用户的界面（对数据展示 j）
 - C：Controller，控制，代表对业务信息的传递（告诉模型要处理什么，告诉视图要展示什么）
 
-![img](.\picture\javaEE1.png)
+![img](./picture/javaEE1.png)
 
 1. 提交需求。用户打开浏览器，输入网址，访问到 jsp 页面，点击页面上的内容（input），传递一个请求
 2. 获取需求。该请求就传递到控制器 Servlet（Control）中，Servlet 分析出用户需要的数据，告知 Model
@@ -43,7 +43,7 @@ tags:
 - service 层：复杂的业务处理，包括各种实际的逻辑运算。
 - dao 层：与数据库进行交互，与数据库相关的代码在此处实现。
 
-![img](.\picture\javaEE2.png)
+![img](./picture/javaEE2.png)
 
 1. 提交需求。客户端点击 jsp 相应的内容，传递一个请求。
 2. 获取需求。Servlet 获取需求、分析需求，将需求传递到 service 层。

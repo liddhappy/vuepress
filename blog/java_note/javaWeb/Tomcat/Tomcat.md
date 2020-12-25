@@ -25,7 +25,7 @@ javaweb 是基于请求和响应来开发的。
 
 请求和和响应是成对出现的，有请求就有响应。
 
-![alt](.\picture\请求和响应.png)
+![alt](./picture/请求和响应.png)
 
 ## 2.Web 资源的分类
 
@@ -79,15 +79,15 @@ tomcat 端口号默认 8080 （此端口号较为常见，容易冲突），建�
 
 修改端口号：
 
-### 5.1找到 Tomcat 配置文件
+### 5.1 找到 Tomcat 配置文件
 
 ![alt](./picture/修改Tomcat端口1.png)
 
-### 5.2修改 Tomcat 配置文件
+### 5.2 修改 Tomcat 配置文件
 
 ![alt](./picture/修改Tomcat端口2.png)
 
-### 5.3访问 tomcat
+### 5.3 访问 tomcat
 
 两种方式
 
@@ -103,7 +103,7 @@ window 键+R 输入 cmd
 
 http://localhost:8888/
 
-### 5.4访问 Tomcat 下的 web 工程
+### 5.4 访问 Tomcat 下的 web 工程
 
 第一种部署方式
 
@@ -124,7 +124,7 @@ docBase表示你的工程目录-->
 
 手托 html 页面和浏览器输入地址访问
 
-![alt](.\picture\手托html和浏览器输入地址访问.png)
+![alt](./picture/手托html和浏览器输入地址访问.png)
 
 ROOT 的工程访问，以及默认 index.html 页面的访问
 
@@ -134,7 +134,7 @@ ROOT 的工程访问，以及默认 index.html 页面的访问
 
 动态 Web 介绍：
 
-![alt](.\picture\动态Web工程介绍.png)
+![alt](./picture/动态Web工程介绍.png)
 
 常见状态码：
 200：一切正常

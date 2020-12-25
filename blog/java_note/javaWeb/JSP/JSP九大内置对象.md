@@ -10,7 +10,7 @@ tags:
 JSP 之九大内置对象
 
 Servlet 和 JSP 中输出数据都需要使用 out 对象。Servlet 中的 out 对象是通过 getWriter()方法获取的。而 JSP 中没有定义 out 对象却可以直接使用。这是因为 out 是 JSO 的内置隐藏对象。JSP 中的常见的 9 个内置隐藏对象如下
-![alt](.\picture\JSP内置对象.png)
+![alt](./picture/JSP内置对象.png)
 
 ### 1、request 对象：
 

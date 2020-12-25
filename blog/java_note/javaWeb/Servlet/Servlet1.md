@@ -65,15 +65,15 @@ web.xml 中的配置：
 
 常见的错误 1：url-pattern 中配置的路径没有以斜杠打头。
 
-![img](.\picture\常见错误1.jpg)
+![img](./picture/常见错误1.jpg)
 
 常见错误 2：servlet-name 配置的值不存在：
 
-![img](.\picture\常见错误2.jpg)
+![img](./picture/常见错误2.jpg)
 
 ### c)url 地址到 Servlet 程序的访问
 
-![alt](.\picture\通过url定位Servlet程序.png)
+![alt](./picture/通过url定位Servlet程序.png)
 
 ### d)Servlet 的生命周期
 
@@ -188,17 +188,17 @@ web.xml 中的配置：
 
 菜单：new ->Servlet 程序
 
-![alt](.\picture\通过idea实现Servlet.png)
+![alt](./picture/通过idea实现Servlet.png)
 
 配置 Servlet 的信息：
 
-![alt](..\Servlet\picture\创建servlet.png)
+![alt](..\Servlet/picture/创建servlet.png)
 
 ### h)Servlet 类的继承体系
 
 **Servlet 继承体系**
 
-![alt](.\picture\Servlet继承体系.png)
+![alt](./picture/Servlet继承体系.png)
 
 ### Servlet 请求分发
 
@@ -334,7 +334,7 @@ Servlet 中的代码：
 
 注意点：
 
-![alt](..\Servlet\picture\Servletconfig注意点.png)
+![alt](..\Servlet/picture/Servletconfig注意点.png)
 
 ## 3.ServletContext 类
 
@@ -494,7 +494,7 @@ POST 方式：可以在**请求的实体内容中向服务器发送数据，传�
 
 2、请求头 key : value 组成 不同的键值对，表示不同的含义。
 
-![img](.\picture\htmlget请求.jpg)
+![img](./picture/htmlget请求.jpg)
 
 **ii.** **POST** 请求
 
@@ -512,7 +512,7 @@ POST 方式：可以在**请求的实体内容中向服务器发送数据，传�
 
 3、请求体 ===>>> 就是发送给服务器的数据
 
-![alt](.\picture\htmlpost请求.png)
+![alt](./picture/htmlpost请求.png)
 
 #### **iii.** 请求头的说明
 
@@ -619,11 +619,11 @@ MIME 的英文全称是"Multipurpose Internet Mail Extensions" 多功能 Interne
 
 谷歌浏览器如何查看 HTTP 协议：
 
-![img](.\picture\chrome查看html.png)
+![img](./picture/chrome查看html.png)
 
 火狐浏览器如何查看 HTTP 协议：
 
-![img](.\picture\firefox查看html.png)
+![img](./picture/firefox查看html.png)
 
 ## 5. JAVAWEB 目录结构
 

@@ -117,7 +117,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 
 什么是请求的转发? 请求转发是指，服务器收到请求后，从一次资源跳转到另一个资源的操作叫请求转发。
 
-![alt](.\picture\请求转发.png)
+![alt](./picture/请求转发.png)
 
 Servlet1 代码：
 
@@ -159,7 +159,7 @@ public class Servlet2 extends HttpServlet {
 
 ### f) base 标签的作用
 
-![alt](.\picture\base标签作用.png)
+![alt](./picture/base标签作用.png)
 
 ```html
 <!DOCTYPE html>
@@ -237,7 +237,7 @@ HttpServletResponse 类和 HttpServletRequest 类一样。每次请求进来，T
 
 使用了字节流，就不能再使用字符流，反之亦然，否则就会报错。
 
-![img](.\picture\两个输出流.png)
+![img](./picture/两个输出流.png)
 
 ### c)如何往客户端回传数据要求：往客户端回传字符串数据。
 
@@ -273,7 +273,7 @@ resp.setContentType("text/html; charset=UTF-8");
 
 请求重定向，是指客户端给服务器发请求，然后服务器告诉客户端说。我给你一些地址。你去新地址访问。叫请求重定向（因为之前的地址可能已经被废弃）。
 
-![img](.\picture\请求转发.png)
+![img](./picture/请求转发.png)
 
 请求重定向的第一种方案：
 
@@ -454,5 +454,5 @@ Servlet 映射的 URL 可以使用通配符和 Servlet 可以被映射到多个 
 
 ![image-20201207123013541](./picture/image-20201207123013541.png)
 
-总结： **无论在 web 中访问什么资源【包括 JSP】，都是在访问 Servlet。**   
+总结： **无论在 web 中访问什么资源【包括 JSP】，都是在访问 Servlet。**  
 没有手工配置缺省 Servlet 的时候，**你访问静态图片，静态网页，缺省 Servlet 会在你 web 站点中寻找该图片或网页**，如果有就返回给浏览器，没有就报 404 错误
