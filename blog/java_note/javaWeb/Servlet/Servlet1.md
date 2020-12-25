@@ -192,7 +192,7 @@ web.xml 中的配置：
 
 配置 Servlet 的信息：
 
-![alt](..\Servlet/picture/创建servlet.png)
+![alt](./picture/创建servlet.png)
 
 ### h)Servlet 类的继承体系
 
@@ -334,7 +334,7 @@ Servlet 中的代码：
 
 注意点：
 
-![alt](..\Servlet/picture/Servletconfig注意点.png)
+![alt](./picture/Servletconfig注意点.png)
 
 ## 3.ServletContext 类
 
